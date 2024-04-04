@@ -12,8 +12,8 @@ if(torch.cuda.is_available()):
 else:
   device = "cpu"
 
-print("Version2 Changes")
-print("Version1 Branch")
+
+print("Making model Change to add error")
 
 def plot_training_curves(train_loss_history, train_accuracy_history, optimizer_name):
     plt.plot(range(1, 10 + 1), train_loss_history, label='Training Loss')
