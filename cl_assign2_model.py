@@ -12,7 +12,8 @@ if(torch.cuda.is_available()):
 else:
   device = "cpu"
 
-print("Adding for roleforward")
+print("Version2 Changes")
+print("Version1 Branch")
 
 def plot_training_curves(train_loss_history, train_accuracy_history, optimizer_name):
     plt.plot(range(1, 10 + 1), train_loss_history, label='Training Loss')
