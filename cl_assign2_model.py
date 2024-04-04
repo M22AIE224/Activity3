@@ -4,11 +4,15 @@ import torchvision.transforms as transforms
 import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
+import numpy as np
+
 
 if(torch.cuda.is_available()):
   device = "cuda"
 else:
   device = "cpu"
+
+print("Version1 Branch")
 
 def plot_training_curves(train_loss_history, train_accuracy_history, optimizer_name):
     plt.plot(range(1, 10 + 1), train_loss_history, label='Training Loss')
